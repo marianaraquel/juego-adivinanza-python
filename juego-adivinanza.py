@@ -10,7 +10,7 @@ print("¡Bienvenido al juego de adivinar el número secreto!")
 while not adivinado:
     if not  cant_intentos < cant_max_intentos:
         print("¡Has agotado tus intentos! El número secreto era:", numero_secreto)
-       # break
+        break
     entrada=input("Introduce un número del 1 al 99: ") 
     numero= int(entrada)
     if numero == numero_secreto:
@@ -21,3 +21,4 @@ while not adivinado:
     else:
         print("El número secreto es menor al ingresado")
     cant_intentos += 1
+print("¡Has agotado tus intentos! El número secreto era:", numero_secreto)
